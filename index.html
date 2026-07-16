@@ -1,62 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/CSS/mystyle.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>News - Western University</title>
+  <link rel="stylesheet" href="/CSS/mystyle.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+    header {
+      margin-bottom: 20px;
+    }
+    header a {
+      margin: 0 8px;
+      text-decoration: none;
+      color: #333;
+    }
+    .tab-content img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 6px;
+      margin-bottom: 20px;
+    }
+    .NewsFrame {
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      margin-bottom: 20px;
+      overflow: hidden;
+      background-color: #f9f9f9;
+      transition: transform 0.3s ease;
+    }
+    .NewsFrame:hover {
+      transform: scale(1.02);
+    }
+    .NewsFrame img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .title {
+      font-weight: bold;
+      font-size: 16px;
+      margin: 10px;
+      color: #444;
+    }
+    .description {
+      margin: 0 10px 10px;
+      color: #666;
+    }
+    footer {
+      margin-top: 30px;
+      text-align: center;
+      font-size: 14px;
+      color: #666;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <a href="#" class="hl">Home</a>
-        |
-        <a href="#" class="hl">History</a>
-        |
-        <a href="#" class="hl">Contact us</a>
-        |
-        <a href="#" class="hl">Vision and Mission</a>
-    </header>
-     <div class="tab-content">
-            <img src="/IMAGE/scholarship.jpg" alt="">
-        </div>
+  <header>
+    <a href="#" class="hl"><i class="fa fa-cube"></i> Home</a> |
+    <a href="history.html" class="hl"><i class="fa fa-cube"></i> History</a> |
+    <a href="vision_mission.html" class="hl"><i class="fa fa-cube"></i> Vision & Mission</a> |
+    <a href="collaboration.html" class="hl"><i class="fa fa-cube"></i> Collaboration</a> |
+    <a href="contact_us.html" class="hl"><i class="fa fa-cube"></i> Contact Us</a>
+  </header>
+
+  <main>
+    <div class="tab-content">
+      <img src="/IMAGE/scholarship.jpg" alt="Scholarship Banner">
+    </div>
+
+    <h2><i class="fa fa-university"></i> Latest News</h2>
+
     <div class="NewsFrame">
-  <a href="#">
-    <img src="/IMAGE/1.jpg" alt="Turkish Airlines expands Cambodia aviation">
-    <div class="title">
-      Turkish Airlines helps expand Cambodia’s aviation sector even further
+      <a href="#">
+        <img src="/IMAGE/1.jpg" alt="Turkish Airlines expands Cambodia aviation">
+        <div class="title">
+          Turkish Airlines helps expand Cambodia’s aviation sector even further
+        </div>
+        <div class="description">
+          Turkish Airlines has officially launched direct flights between Istanbul (Türkiye) and Phnom Penh.
+        </div>
+      </a>
     </div>
-    <div class="description">
-      Turkish Airlines has officially launched direct flights between Istanbul (Türkiye) and Phnom Penh.
-    </div>
-  </a>
-</div>
 
-<div class="NewsFrame">
-  <a href="#">
-    <img src="/IMAGE/2.jpg" alt="Cambodia aviation growth">
-    <div class="title">
-     From limited space to local favourite: How LOLC financing helped transform “Sromoch Khmao” restaurant    
+    <div class="NewsFrame">
+      <a href="#">
+        <img src="/IMAGE/2.jpg" alt="Cambodia restaurant growth">
+        <div class="title">
+          From limited space to local favourite: How LOLC financing helped transform “Sromoch Khmao” restaurant
+        </div>
+        <div class="description">
+          The inspiring journey of Nhein Kimheang, owner of the “Sromoch Khmao” restaurant in Veal Veng district, Pursat province.
+        </div>
+      </a>
     </div>
-    <div class="description">
-The inspiring journey of Nhein Kimheang, owner of the “Sromoch Khmao” restaurant in Veal Veng district, Pursat province
+
+    <div class="NewsFrame">
+      <a href="#">
+        <img src="/IMAGE/3.jpg" alt="Eco-Industrial Parks project">
+        <div class="title">
+          ‘Light Touch’ project supports greener SEZs, more funding needed to expand programme
+        </div>
+        <div class="description">
+          The year-long Eco-Industrial Parks (EIP) Light Touch Activities project concluded successfully.
+        </div>
+      </a>
     </div>
-  </a>
-</div>
-<div class="NewsFrame">
-  <a href="#">
-    <img src="/IMAGE/3.jpg" alt="Turkish Airlines expands Cambodia aviation">
-  </a>
-  <div class="title">
-Light Touch’ project supports greener SEZs, more funding needed to expand programme  
-</div>
-  <div class="description">
-concluded the year-long Eco-Industrial Parks (EIP) Light Touch Activities project
-  </div>
-</div>
-<footer>
-    Copyright @2026
-</footer>
+  </main>
 
-
+  <footer>
+    &copy; 2026 Western University
+  </footer>
 </body>
 </html>
